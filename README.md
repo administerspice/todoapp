@@ -1,4 +1,4 @@
-# todoapp
+# React + Firebase Todo App
 
 Prerequisites: yarn or npm
 1) `npm install`
