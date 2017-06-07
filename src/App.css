@@ -1,24 +1,118 @@
 .App {
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #eee;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 80px;
+.Panel {
+  /*display: flex;
+  flex-direction: column;
+  align-items: center;*/
+  width: 30%;
+  padding: 10px;
+}
+.Button:hover {
+  background-color: #3CAEB4;
+  cursor: pointer;
 }
 
-.App-header {
-  background-color: #222;
-  height: 150px;
-  padding: 20px;
-  color: white;
+.Button:active {
+  background-color: #0B6469;
+  cursor: pointer;
 }
 
-.App-intro {
-  font-size: large;
+.Button {
+  height: 35px;
+  width: 150px;
+  background-color: #119DA4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px;
 }
 
-@keyframes App-logo-spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
+/* ListItem */
+
+.ListItem {
+  display: flex;
+  align-items: flex-start;
+  padding-bottom: 5px;
+}
+
+.TextArea {
+  resize: none; overflow: hidden;
+  outline: none;
+  border: none;
+  display: block;
+  border: none;
+  font-size: 16px;
+  padding: 0;
+  background-color: transparent;
+}
+
+.Checkbox:hover {
+  cursor: pointer;
+  border-color: #3CAEB4;
+}
+
+.Checkbox:active {
+  border-color: #119DA4;
+  background-color: #119DA4;
+}
+
+.Checkbox {
+  height: 12px;
+  width: 12px;
+  border-style: solid;
+  border-radius: 3px;
+  border-width: 1px;
+  border-color: #aaa;
+}
+.CheckboxChecked:hover {
+  cursor: pointer;
+  background-color: #3CAEB4;
+  border-color: #3CAEB4;
+}
+.CheckboxChecked:active {
+  border-color: #119DA4;
+  background-color: #119DA4;
+}
+.CheckboxChecked {
+  height: 12px;
+  width: 12px;
+  background-color: #aaa;
+  border-style: solid;
+  border-radius: 3px;
+  border-width: 1px;
+  border-color: #aaa;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.Checkmark {
+  width: 3px;
+  height: 9px;
+  border: solid #fff;
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
+}
+
+.DeleteButton:hover {
+  background-color: #FE6A6A;
+  cursor: pointer;
+}
+.DeleteButton:active {
+  background-color: #D03D3C;
+}
+.DeleteButton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 16px;
+  width: 16px;
+  border-radius: 8px;
+  background-color: #FE4A49;
 }
