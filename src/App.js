@@ -29,7 +29,9 @@ export default class App extends Component {
       let response = snapshot.val();
       let newList = [];
 
-      response.forEach((item) => { newList.push(item) });
+      if (response) {
+        response.forEach((item) => { newList.push(item) });
+      }
       this.setState({ list: newList });
     });
   }
